@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+п»ї<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Лабораторная работа №4</title>
+		<title>Р›Р°Р±РѕСЂР°С‚РѕСЂРЅР°СЏ СЂР°Р±РѕС‚Р° в„–4</title>
 		<style>
 			h1 {
 				color:red;
@@ -19,41 +19,41 @@
 		function anketa(){
 			win = window.open("","", "width=1000, height=500");
 			win.document.open();
-			str = "<h1>О себе</h1><hr>Я, "+document.getElementById("Фамилия").value;
-			str += " "+document.getElementById("Имя").value;
-			str += " "+document.getElementById("Отчество").value;
-			str += " родился в "+document.getElementById("Год").value;
-			str += " году в городе "+document.getElementById("Место").value;
-			lub = document.getElementById("Занятие").value;
-			str += "<br><br>Больше всего я люблю "+lub;
-			nelub = document.getElementById("НеЛюбЗанятие").value;
-			str += " и очень не люблю "+nelub+". Было бы замечательно, всю жизнь "+lub;
-			str += ", но к сожалению мне приходится иногда и "+nelub;
-			str += "<br><input type='button' value='Закрыть' onclick='window.close()'>";
+			str = "<h1>Рћ СЃРµР±Рµ</h1><hr>РЇ, "+document.getElementById("Р¤Р°РјРёР»РёСЏ").value;
+			str += " "+document.getElementById("РРјСЏ").value;
+			str += " "+document.getElementById("РћС‚С‡РµСЃС‚РІРѕ").value;
+			str += " СЂРѕРґРёР»СЃСЏ РІ "+document.getElementById("Р“РѕРґ").value;
+			str += " РіРѕРґСѓ РІ РіРѕСЂРѕРґРµ "+document.getElementById("РњРµСЃС‚Рѕ").value;
+			lub = document.getElementById("Р—Р°РЅСЏС‚РёРµ").value;
+			str += "<br><br>Р‘РѕР»СЊС€Рµ РІСЃРµРіРѕ СЏ Р»СЋР±Р»СЋ "+lub;
+			nelub = document.getElementById("РќРµР›СЋР±Р—Р°РЅСЏС‚РёРµ").value;
+			str += " Рё РѕС‡РµРЅСЊ РЅРµ Р»СЋР±Р»СЋ "+nelub+". Р‘С‹Р»Рѕ Р±С‹ Р·Р°РјРµС‡Р°С‚РµР»СЊРЅРѕ, РІСЃСЋ Р¶РёР·РЅСЊ "+lub;
+			str += ", РЅРѕ Рє СЃРѕР¶Р°Р»РµРЅРёСЋ РјРЅРµ РїСЂРёС…РѕРґРёС‚СЃСЏ РёРЅРѕРіРґР° Рё "+nelub;
+			str += "<br><input type='button' value='Р—Р°РєСЂС‹С‚СЊ' onclick='window.close()'>";
 			win.document.write(str);
 			win.document.close();
 		}
 		</script>
 	</head>
 	<body>
-		<h1>Анкета</h1>
+		<h1>РђРЅРєРµС‚Р°</h1>
 		<hr>
 		<form>
-			Фамилия:<input type=text id='Фамилия' size="20">
+			Р¤Р°РјРёР»РёСЏ:<input type=text id='Р¤Р°РјРёР»РёСЏ' size="20">
 			<br>
-			Имя:<input type=text id='Имя' size="20">
+			РРјСЏ:<input type=text id='РРјСЏ' size="20">
 			<br>
-			Отчество:<input type=text id='Отчество' size="20">
+			РћС‚С‡РµСЃС‚РІРѕ:<input type=text id='РћС‚С‡РµСЃС‚РІРѕ' size="20">
 			<br>
-			Год рождения:<input type=text id='Год' size="20">
+			Р“РѕРґ СЂРѕР¶РґРµРЅРёСЏ:<input type=text id='Р“РѕРґ' size="20">
 			<br>
-			Место рождения:<input type=text id='Место' size="20">
+			РњРµСЃС‚Рѕ СЂРѕР¶РґРµРЅРёСЏ:<input type=text id='РњРµСЃС‚Рѕ' size="20">
 			<br>
-			Любимое занятие:<input type=text id='Занятие' size="20">
+			Р›СЋР±РёРјРѕРµ Р·Р°РЅСЏС‚РёРµ:<input type=text id='Р—Р°РЅСЏС‚РёРµ' size="20">
 			<br>
-			Не любимое занятие:<input type=text id='НеЛюбЗанятие' size="20">
+			РќРµ Р»СЋР±РёРјРѕРµ Р·Р°РЅСЏС‚РёРµ:<input type=text id='РќРµР›СЋР±Р—Р°РЅСЏС‚РёРµ' size="20">
 			<br>
-			<input type=button value="Сформировать биографию" OnClick="anketa()">
+			<input type=button value="РЎС„РѕСЂРјРёСЂРѕРІР°С‚СЊ Р±РёРѕРіСЂР°С„РёСЋ" OnClick="anketa()">
 		<hr>
 		</form>
 	</body>
